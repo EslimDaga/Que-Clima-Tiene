@@ -51,12 +51,12 @@ function App() {
       <section className="bg-home align-items-center" id="home">
         <div className="container">
           <div className="row align-items-center">
-            {component}
             <Form
               search = {search}
               saveSearch = {saveSearch}
               saveConsult = {saveConsult}
             />
+            {component}
           </div>
         </div>
       </section>
