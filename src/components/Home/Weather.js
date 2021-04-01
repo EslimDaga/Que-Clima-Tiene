@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 const Weather = ({result}) => {
 
@@ -30,13 +31,13 @@ const Weather = ({result}) => {
           {parseInt(main.temp_min - kelvin)}
           <span> &#x2103; </span>
         </h4>
-        <div className="mt-4 pt-3">
-          <a href="#!" className="btn btn-primary mr-3">Estimate project</a>
-          <a href="#!" className="btn btn-outline-primary">Our portfolio</a>
-        </div>
       </div>
     </div>
-  )
+  );
+}
+
+Weather.propTypes = {
+  result : PropTypes.object.isRequired
 }
 
 export default Weather;
