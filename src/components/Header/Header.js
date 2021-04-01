@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 const Header = () => {
   return(
@@ -12,17 +13,18 @@ const Header = () => {
         </button>
         <div className="collapse navbar-collapse" id="navbarCollapse">
           <ul className="navbar-nav ml-auto navbar-center" id="mySidenav">
-            <li className="nav-item active">
-              <a href="#home" className="nav-link">Home</a>
-            </li>
           </ul>
           <div className="navbar-button d-none d-lg-inline-block">
-            <a href="/" className="btn btn-sm btn-primary btn-round">Sign Up</a>
+            <a href="https://github.com/eslimdaga" target="_blank" className="btn btn-sm btn-primary btn-round" rel="noreferrer">Ver Código</a>
           </div>
         </div>
       </div>
     </nav>
   );
+}
+
+Header.propTypes = {
+  title: PropTypes.string.isRequired
 }
 
 export default Header;
