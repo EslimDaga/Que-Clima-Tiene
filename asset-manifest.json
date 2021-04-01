@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.js": "/Que-Clima-Tiene/static/js/main.d9a22f11.chunk.js",
+    "main.js.map": "/Que-Clima-Tiene/static/js/main.d9a22f11.chunk.js.map",
+    "runtime-main.js": "/Que-Clima-Tiene/static/js/runtime-main.b74ea655.js",
+    "runtime-main.js.map": "/Que-Clima-Tiene/static/js/runtime-main.b74ea655.js.map",
+    "static/js/2.57f1590b.chunk.js": "/Que-Clima-Tiene/static/js/2.57f1590b.chunk.js",
+    "static/js/2.57f1590b.chunk.js.map": "/Que-Clima-Tiene/static/js/2.57f1590b.chunk.js.map",
+    "static/js/3.6752f1e9.chunk.js": "/Que-Clima-Tiene/static/js/3.6752f1e9.chunk.js",
+    "static/js/3.6752f1e9.chunk.js.map": "/Que-Clima-Tiene/static/js/3.6752f1e9.chunk.js.map",
+    "index.html": "/Que-Clima-Tiene/index.html",
+    "static/js/2.57f1590b.chunk.js.LICENSE.txt": "/Que-Clima-Tiene/static/js/2.57f1590b.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b74ea655.js",
+    "static/js/2.57f1590b.chunk.js",
+    "static/js/main.d9a22f11.chunk.js"
+  ]
+}
