@@ -1,12 +1,7 @@
 import React, { useState } from "react";
+import {Error} from "./index";
 
-const Form = () => {
-
-  //State the form
-  const [ search, saveSearch ] = useState({
-    city : "",
-    country : ""
-  });
+const Form = ({search,saveSearch,saveConsult}) => {
 
   const [ error, saveError ] = useState(false);
 
@@ -31,17 +26,15 @@ const Form = () => {
       return;
     }
 
-    saveError(false)
-    //Component principal
+    saveError(false);
+    saveConsult(true);
   }
 
   return (
     <div className="col-lg-5 offset-lg-1">
       <div className="home-registration-form bg-white p-5 mt-4">
         <h5 className="form-title mb-4 text-center font-weight-bold">¿Que clima tiene? 🤔</h5>
-        {error ? <div className="alert alert-danger alert-dismissible fade show" role="alert">
-          <strong>Todos los datos son obligatorios!</strong>
-        </div> : null}
+        {error ? <Error message="Todos los datos son obligatorios" />: null}
         <form onSubmit={handleSubmit} className="registration-form">
           <label className="text-muted">Ciudad :</label>
           <input
@@ -63,7 +56,7 @@ const Form = () => {
           >
             <option>-Selecciones un País</option>
             <option value="PE">Perú</option>
-            <option value="ME">México</option>
+            <option value="MX">México</option>
             <option value="BO">Bolivia</option>
           </select>
           <input
